@@ -35,7 +35,7 @@ def speak_text(text):
 # --------- التشغيل الرئيسي ---------
 if __name__ == "__main__":
     audio_file = "hi there.mp3"  # تأكد أن الملف موجود في نفس المجلد
-    cohere_api_key = "6tD3ceNUpTTV8C7QsFZDOWCEIlPGCWldlwZKoR8s"
+    cohere_api_key = "6tD3ceNUpTTV8C7QsFZDOWCEIlPGCWldlwZKoR8"
 
     print("🎧 جاري تحويل الصوت إلى نص...")
     text = transcribe_audio(audio_file)
@@ -46,4 +46,5 @@ if __name__ == "__main__":
     print("🤖 رد النموذج:", reply)
 
     print("🔊 جاري تشغيل الرد صوتيًا...")
+
     speak_text(reply)
